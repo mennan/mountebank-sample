@@ -1,0 +1,16 @@
+{
+  "name": "Ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "mock": "node ./test/Mountebank/index.js",
+    "kill": "kill-port --port 4001",
+    "test": "yarn kill && yarn mock & dotnet test && yarn kill"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kill-port": "^1.6.0"
+  }
+}
